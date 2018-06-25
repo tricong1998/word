@@ -120,24 +120,24 @@ namespace Test
             if (font1.Glow.Color.ObjectThemeColor.ToString() == font2.Glow.Color.ObjectThemeColor.ToString()
                 && font1.Glow.Radius == font2.Glow.Radius
                 && font1.Glow.Transparency == font2.Glow.Transparency
-                && font1.Reflection.Blur == font2.Reflection.Blur
-                && font1.Reflection.Size == font2.Reflection.Size
-                && font1.Reflection.Transparency == font2.Reflection.Transparency
-                && font1.Reflection.Offset == font2.Reflection.Offset
-                && font1.StylisticSet.ToString() == font2.StylisticSet.ToString()
-                && font1.Line.Weight == font2.Line.Weight
-                && font1.Line.DashStyle == font2.Line.DashStyle
-                && font1.Line.ForeColor.RGB == font2.Line.ForeColor.RGB
-                && font1.Shadow == font2.Shadow
-                && font1.TextShadow.Blur == font2.TextShadow.Blur
-                && font1.TextShadow.ForeColor.RGB == font2.TextShadow.ForeColor.RGB
-                && font1.TextShadow.Obscured == font2.TextShadow.Obscured
-                && font1.TextShadow.OffsetX == font2.TextShadow.OffsetX
-                && font1.TextShadow.OffsetY == font2.TextShadow.OffsetY
-                && font1.TextShadow.Size == font2.TextShadow.Size
-                && font1.TextShadow.Transparency == font2.TextShadow.Transparency
-                && font1.TextShadow.Type == font2.TextShadow.Type
-                && font1.TextShadow.Style == font2.TextShadow.Style
+                //&& font1.Reflection.Blur == font2.Reflection.Blur
+                //&& font1.Reflection.Size == font2.Reflection.Size
+                //&& font1.Reflection.Transparency == font2.Reflection.Transparency
+                //&& font1.Reflection.Offset == font2.Reflection.Offset
+                //&& font1.StylisticSet.ToString() == font2.StylisticSet.ToString()
+                //&& font1.Line.Weight == font2.Line.Weight
+                //&& font1.Line.DashStyle == font2.Line.DashStyle
+                //&& font1.Line.ForeColor.RGB == font2.Line.ForeColor.RGB
+                //&& font1.Shadow == font2.Shadow
+                //&& font1.TextShadow.Blur == font2.TextShadow.Blur
+                //&& font1.TextShadow.ForeColor.RGB == font2.TextShadow.ForeColor.RGB
+                //&& font1.TextShadow.Obscured == font2.TextShadow.Obscured
+                //&& font1.TextShadow.OffsetX == font2.TextShadow.OffsetX
+                //&& font1.TextShadow.OffsetY == font2.TextShadow.OffsetY
+                //&& font1.TextShadow.Size == font2.TextShadow.Size
+                //&& font1.TextShadow.Transparency == font2.TextShadow.Transparency
+                //&& font1.TextShadow.Type == font2.TextShadow.Type
+                //&& font1.TextShadow.Style == font2.TextShadow.Style
                 )
             {
                 //        //try

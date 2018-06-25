@@ -81,7 +81,7 @@ namespace WpfApp1
                 && checkEqualParagraph(range1.ParagraphFormat, range2.ParagraphFormat)
                 && checkEqualBorder(range1.Borders, range2.Borders)
                 && checkEqualPageSetup(range1.PageSetup, range2.PageSetup)
-                && checkTextEffect(range1, range2)
+                //&& checkTextEffect(range1, range2)
                 )
             {
                 return true;
@@ -114,24 +114,6 @@ namespace WpfApp1
                 return false;
             }
         }
-        //so sanh hieu ung chu
-        public bool checkTextEffect(Range range1, Range range2)
-        {
-            Font font1 = range1.Font;
-            Font font2 = range2.Font;
-            if (checkEqualGlow(font1, font2)
-                && checkEqualReflection(font1, font2)
-                && checkEqualShadow(font1, font2)
-                && checkEqualColorEffect(font1, font2)
-                )
-            {
-                return true;
-            }
-            else
-            {
-                return false;
-            }
-        }
         //so sanh dinh dang doan van ban
         public bool checkEqualParagraph(ParagraphFormat paragraphFormat1,
             ParagraphFormat paragraphFormat2)
@@ -144,7 +126,8 @@ namespace WpfApp1
                 && paragraphFormat1.LineSpacingRule == paragraphFormat2.LineSpacingRule
                 && paragraphFormat1.SpaceAfter == paragraphFormat2.SpaceAfter
                 && paragraphFormat1.SpaceBefore == paragraphFormat2.SpaceBefore
-                && paragraphFormat1.LineSpacing == paragraphFormat2.LineSpacing)
+                && paragraphFormat1.LineSpacing == paragraphFormat2.LineSpacing
+                )
             {
                 return true;
             }
@@ -180,6 +163,24 @@ namespace WpfApp1
                 && pageSetup1.TopMargin == pageSetup2.TopMargin
                 && pageSetup1.PageHeight == pageSetup2.PageHeight
                 && pageSetup1.PageWidth == pageSetup2.PageWidth)
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+        }
+        //so sanh hieu ung chu
+        public bool checkTextEffect(Range range1, Range range2)
+        {
+            Font font1 = range1.Font;
+            Font font2 = range2.Font;
+            if (checkEqualGlow(font1, font2)
+                && checkEqualReflection(font1, font2)
+                && checkEqualShadow(font1, font2)
+                && checkEqualColorEffect(font1, font2)
+                )
             {
                 return true;
             }
